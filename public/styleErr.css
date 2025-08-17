@@ -1,11 +1,5 @@
-* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
-
     body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background: linear-gradient(135deg, #1a73e8, #0f9d58);
       height: 100vh;
       display: flex;
@@ -19,14 +13,12 @@
       background: rgba(0, 0, 0, 0.6);
       padding: 40px;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
       width: 90%;
       max-width: 500px;
     }
 
     .error-code {
       font-size: 100px;
-      font-weight: bold;
       color: #ff5252;
       letter-spacing: 5px;
     }
@@ -48,12 +40,7 @@
       background: #ff5252;
       color: #fff;
       border: none;
-      border-radius: 6px;
       text-decoration: none;
       font-size: 16px;
       transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background: #e53935;
     }
