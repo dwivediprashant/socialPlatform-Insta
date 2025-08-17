@@ -3,7 +3,7 @@
 ⚠️ **Disclaimer**:  
 This is purely a **learning project**. It’s not intended for real-world use, production, or deployment.  
 I only created this project to **practice and showcase my understanding** of **EJS templating**, **Node.js**, and **Express.js** concepts.  
-So… if you came here expecting something useful, you can leave 😅.  
+So… if you came here to check my skills then do that please else, you can leave 😅.  
 
 ---
 
