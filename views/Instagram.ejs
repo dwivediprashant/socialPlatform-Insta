@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram profile ejs</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="profile-head">
+        <div class="profile-details">
+            <%if(userData.gender=="male"){%>
+            <div class="profile-photo">
+                <img src="/assets/user1.jpeg" alt="">
+            </div>
+        <%}else{%>
+            <div class="profile-photo">
+                <img src="/assets/post6.jpeg " alt="">
+            </div>
+        <%}%>
+        <div class="welcome-profile">
+            <h1>This page belongs to @<%=userData.name%></h1>
+            <h3><%=userData.name%>'s profile</h3>
+            <button>Follow</button>
+            <button>Message</button>
+        </div>
+        </div>
+    </div>
+    <div class="follow-details">
+        <div>Followers : <%=userData.followers%></div>
+        <div>Following : <%=userData.following%></div>
+    </div>
+    <div class="post">
+        <%for (post of userData.posts){%>
+            <button class="post-id"><%=post.id%></button>
+            <div class="post-title">Title : <%=post.title%></div>
+            <div class="post-img">
+                <img src="<%= post.image %>" alt="post-image">
+                <span class="post-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt quibusdam eveniet nisi eius minus illum veniam itaque quos non porro repudiandae, corporis sapiente voluptatibus modi, error, odio sed numquam quam!</span>
+            </div>
+            <div class="post-like">
+                Likes : <%=post.likes%>&nbsp;&nbsp;
+                Comments : <%=post.comments%>
+            </div>
+        <%}%>
+    </div>
+</body>
+</html>
